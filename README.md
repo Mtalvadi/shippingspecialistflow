@@ -1,18 +1,33 @@
-# Salesforce DX Project: Next Steps
+# Screen - Create Lead for Shipping Specialist Flow Automation
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Pre-requisite :
+-	Two new custom fields on Lead object :
+1. (Name :  Preferred Contact Method), (Datatype : Picklist), (Values : Phone, Email, Text)
+2. (Name : Follow Up Date), (Datatype: Date/Time)
+-	Screen flow type (Screen - Create Lead for Shipping Specialist) flow is configured and activated.
+-	Under “Sales” lightning app in App Manager option, utility item named as “Lead Creation Wizard” is created with appropriate height & width and corresponding flow is mapped to it.
 
-## How Do You Plan to Deploy Your Changes?
+![image](https://github.com/Mtalvadi/shippingspecialistflow/assets/83495051/8b6ce669-83cd-40a3-ac24-db334515dd28)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Use case : A sales manager requires a pop-up window where his team (Sales Rep) can create leads & schedule an appointment/session for customers if they have a specific questions/concern for Shipping Specialist.
+Context : Universal Container company is an international organization who helps customer transport goods/commodities from one place to another destination. In most of the cases, customer would have specific questions like – “How much does it cost to ship my 1-ton container from Dubai to Australia or How much time it takes to complete paper work or what are the other fees associated to custom?”
+Therefore, to better understand customers and provide excellent customer support, the sales team at Universal company requires automation. This solution should efficiently generate leads, saving time for both customers and representatives.
 
-## Configure Your Salesforce DX Project
+## Solution/Automation :
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+1.	After implementing pre-requisites, reps will start filling consumer's details such as Full Name, Phone, Email, Company etc.
 
-## Read All About It
+![image](https://github.com/Mtalvadi/shippingspecialistflow/assets/83495051/514e1ba4-ed71-4362-90e5-1b5cd024b775)
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+2. Representatives will receive specific follow-up questions or concerns from the customer. They will then confirm the preferred contact method and schedule a follow-up date and time. Afterward, they will assign the lead record to the Shipping Specialist, enhancing the resolution of customer queries in a more efficient manner.
+
+![image](https://github.com/Mtalvadi/shippingspecialistflow/assets/83495051/83f03b24-17b2-4fcf-a4fe-92932b52aa81)
+
+3. Click Next and lead would get generated.
+
+![image](https://github.com/Mtalvadi/shippingspecialistflow/assets/83495051/23512c3e-5c3b-4057-a013-c5d82caa58de)
+
+![image](https://github.com/Mtalvadi/shippingspecialistflow/assets/83495051/49bec713-39b6-42f7-81b3-7af932f3aca5)
+
+![image](https://github.com/Mtalvadi/shippingspecialistflow/assets/83495051/4db1a54c-f081-44b5-8eaf-532170763ca2)
+
